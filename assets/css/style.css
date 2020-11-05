@@ -779,3 +779,115 @@ section.testimonial {
     padding-left: 50px;
   }
 }
+
+
+/* Contact Form */
+
+.contact-sec {
+  margin-top: 70px;
+}
+
+.contact-media {
+  background-image: url(../images/contact-bg.png);
+  padding-left: calc((100% - (1088 / 1366 * 100%)) / 2);
+  padding-right: calc((100% - (1088 / 1366 * 100%)) / 2);
+}
+
+.contact-media .icon {
+  margin-bottom: 25px;
+}
+
+.contact-media .label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-media .content {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 21px;
+  line-height: 57px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.section-subtitle-2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 55px;
+  letter-spacing: 1px;
+}
+
+.section-title-2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  color:#023061;
+  line-height: 55px;
+  position: relative;
+  margin-bottom: 55px;
+}
+
+.contact-form {
+  margin-top: 70px;
+  margin-bottom: 115px;
+}
+
+.contact-form .form-body {
+  width: 568px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form .field-group {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+
+.contact-form .field-group:last-of-type {
+  margin-bottom: 45px;
+}
+
+.contact-form input {
+  width: 268px;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 21px;
+  padding: 0px 30px;
+  color: black;
+  border: 1px solid black;
+}
+
+.contact-form input:first-child {
+  margin-right: 32px;
+}
+
+.contact-form textarea {
+  width: 568px;
+  height: 197px;
+  resize: none;
+  padding: 12px 30px;
+  color: black;
+  border: 1px solid black;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 21px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #000000;
+}
+
+input[type="submit"] {
+  width: 220px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #023061;
+  background-color: #023061;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
