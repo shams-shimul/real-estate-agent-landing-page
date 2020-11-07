@@ -443,7 +443,7 @@ a.contact-button:hover {
 @media only screen and (max-width: 767px) {
   .section-subtitle {
     line-height: 32px;
-    font-size: 15px;
+    font-size: 18px;
   }
   .section-title {
     font-size: 32px;
@@ -891,9 +891,15 @@ section.testimonial {
 /* Contact Form Responsive */
 
 @media only screen and (max-width: 767px) {
+  .contact-media .label {
+    font-size: 18px;
+  }
+  .contact-media .content {
+    line-height: 40px;
+  }
   .section-subtitle-2 {
     line-height: 32px;
-    font-size: 15px;
+    font-size: 18px;
   }
   .section-title-2 {
     font-size: 32px;
@@ -901,7 +907,18 @@ section.testimonial {
     margin-top: 20px;
   }
   .contact-form {
+    margin-top: 70px;
     margin-bottom: 70px;
+  }
+  .col.contact-form:before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    width: 90%;
+    border-top: 1px solid #023061;
+    border-top-style: dashed;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .contact-form .form-body {
     width: 100%;
