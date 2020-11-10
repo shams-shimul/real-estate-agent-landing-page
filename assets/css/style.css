@@ -936,3 +936,120 @@ section.testimonial {
     padding: 12px 15px;
   }
 }
+
+
+/* Footer */
+
+footer {
+  background: #023061;
+}
+
+footer .boxed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.footer__brand {
+  flex: 0.85;
+}
+.footer__links {
+  flex: 1;
+}
+.footer__address {
+  flex: 1;
+}
+
+.footer__brand--logo {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.footer__brand--social a {
+  margin-right: 10px;
+}
+
+.footer__brand--social a img{
+  vertical-align: -webkit-baseline-middle;
+}
+
+.footer__links {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+
+.footer__links ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer__links ul li a {
+  color: #fff;
+  line-height: 14px;
+}
+
+.footer__links ul li a:hover {
+  color:whitesmoke;
+  transition-duration: 0.4s;
+}
+
+.footer__brand__links:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  transition-duration: 0.4s;
+}
+
+.footer__brand .social img{
+  margin-right: 15px;
+}
+
+.footer__address--map {
+  width: 181px;
+  height: 116px;
+  overflow: hidden;
+  margin-left: 24px;
+}
+
+.footer__address--map img {
+  position: relative;
+  transform: scale(0.6) translate(-252px, -125px);
+}
+
+.footer__address--details .title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 21px;
+}
+
+.footer__address--details div {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer__address--details div a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer__underline {
+  width: calc(1088 / 1366 * 100%);
+  height: 1px;
+  background: #707070;
+  margin-top: 32px;
+}
+
+.footer__copyright {
+  padding: 36px 0 51px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+}
