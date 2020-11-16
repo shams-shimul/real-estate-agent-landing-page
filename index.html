@@ -277,14 +277,24 @@
   <!-- Footer -->
   <footer class="text-white">
     <div class="img-gallery d-flex flex-wrap">
-      <img src="assets/images/homes4.png" alt="" class="d-block">
-      <img src="assets/images/homes5.png" alt="" class="d-block">
-      <img src="assets/images/homes2.png" alt="" class="d-block">
-      <img src="assets/images/homes3.png" alt="" class="d-block">
-      <img src="assets/images/homes1.png" alt="" class="d-block">
+      <div>
+        <img src="assets/images/homes4.png" alt="">
+      </div>
+      <div>
+        <img src="assets/images/homes5.png" alt="">
+      </div>
+      <div>
+        <img src="assets/images/homes2.png" alt="">
+      </div>
+      <div>
+        <img src="assets/images/homes3.png" alt="">
+      </div>
+      <div class="d-none d-md-block">
+        <img src="assets/images/homes1.png" alt="">
+      </div>
     </div>
-    <div class="boxed">
-      <div class="footer__brand">
+    <div class="boxed no-gutters">
+      <div class="footer__brand col-12 col-md-5 col-lg-4 text-center text-md-left">
         <a class="footer__brand--logo" href="#"><b>Alden</b> Casas</a>
         <div class="footer__brand--social">
           <a href="javascript:void(0)">
@@ -301,7 +311,7 @@
           </a>
         </div>
       </div>
-      <div class="footer__links">
+      <div class="d-md-none d-lg-block footer__links col-12 col-lg-2">
         <ul>
           <li><a href="javascript:void(0)">About Alden</a></li>
           <li><a href="javascript:void(0)">Search Homes</a></li>
@@ -309,19 +319,29 @@
           <li><a href="javascript:void(0)">Conact Me</a></li>
         </ul>
       </div>
-      <div class="footer__address">
-        <div class="footer__address--map float-right">
-          <img src="assets/images/map.png" alt="">
-        </div>
-        <div class="footer__address--details float-right text-right">
+      <div class="footer__address d-flex col-12 col-md-7 col-lg-6 justify-content-end">
+        <div class="footer__address--details text-center text-md-right">
           <div class="title">Realty office</div>
           <div>
-            123 Street<br>
+            123 Street<span class="d-inline-block d-md-none">, </span>
+            <br class="d-none d-md-block">
             City, State 89077<br>
             <a href="#">Get Directions</a>
           </div>
         </div>
+        <div class="footer__address--map">
+          <img src="assets/images/map.png" alt="">
+        </div>
       </div>
+    </div>
+    <div class="d-none d-md-block d-lg-none footer__underline mx-auto mt-5"></div>
+    <div class="d-none d-md-block d-lg-none footer__links boxed mt-0">
+      <ul class="d-flex text-center">
+        <li class="float-left"><a class="d-block p-3" href="javascript:void(0)">About Alden</a></li>
+        <li class="float-left"><a class="d-block p-3" href="javascript:void(0)">Search Homes</a></li>
+        <li class="float-left"><a class="d-block p-3" href="javascript:void(0)">Buy or Sell</a></li>
+        <li class="float-left"><a class="d-block p-3" href="javascript:void(0)">Conact Me</a></li>
+      </ul>
     </div>
     <div class="footer__underline mx-auto"></div>
     <div class="footer__copyright text-center">
