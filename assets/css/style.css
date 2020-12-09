@@ -1,6 +1,5 @@
 /* Import required fonts from Google */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -600,6 +599,90 @@ section.profile {
 
 section.testimonial {
   margin-top: 95px;
+  margin-bottom: 100px;
+}
+
+.slick-prev, .slick-next {
+  color: black;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+
+.slick-prev:before, .slick-next:before  {
+  color: black !important;
+  font-size: 30px;
+}
+
+.slick-prev:before{
+  font-family: "Flaticon";
+  content: "\f100";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slick-next:before  {
+  font-family: "Flaticon";
+  content: "\f101";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.slick-slide {
+  padding: 0 61px;
+}
+
+.testimonial-slider .star {
+  margin-bottom: 27px;
+}
+
+.testimonial-slider .review {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+.testimonial-slider .name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: italic;
+  color: black;
+  margin-top: 20px;
+}
+
+/* Testimonial Responsive */
+
+@media only screen and (max-width: 575px) {
+  section.testimonial {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .slick-slide {
+    padding: 0 20px;
+  }
+  .slick-prev {
+    left: -25px;
+  }
+  .slick-next {
+    right: -25px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .slick-slide {
+    padding: 0 25px;
+  }
+  .slick-prev {
+    left: -25px;
+  }
+  .slick-next {
+    right: -25px;
+  }
 }
 
 
@@ -928,8 +1011,12 @@ section.testimonial {
     margin-bottom: 0px;
   }
   .contact-form input {
+    width: 100%;
     margin-bottom: 16px;
     padding: 0px 15px;
+  }
+  .contact-form input:first-child {
+    margin-right: 0;
   }
   .contact-form textarea {
     width: 100%;
@@ -1126,8 +1213,11 @@ footer .boxed {
   .footer__underline {
     margin-top: 0;
   }
-  .d-md-block.footer__links ul li {
-    flex: 1;
+  .d-md-block.footer__links ul {
+    justify-content: space-between;
+  }
+  .d-md-block.footer__links ul {
+    padding: 1rem 0;
   }
   .footer__copyright {
     font-size: 14px;
