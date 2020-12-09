@@ -1,2 +1,2 @@
 # real-estate-agent-landing-page
- This is a static HTML page designed with real-estate agency centric theme in mind.
+ This is a static HTML page designed for real-estate agency portfolio.
