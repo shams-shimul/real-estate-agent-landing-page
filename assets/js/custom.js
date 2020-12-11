@@ -1,15 +1,19 @@
 $(window).scroll(function () {
+  var h = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+
   $(".slideanim1").each(function () {
     var pos = $(this).offset().top;
     var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
+    if (pos < winTop + h * 80/100) {
       $(this).addClass("slide");
     }
   });
   $(".slideanim2").each(function () {
     var pos = $(this).offset().top;
     var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
+    if (pos < winTop + h * 80/100) {
       setTimeout(() => {
         $(this).addClass("slide");
       }, 150);
@@ -18,7 +22,7 @@ $(window).scroll(function () {
   $(".slideanim3").each(function () {
     var pos = $(this).offset().top;
     var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
+    if (pos < winTop + h * 80/100) {
       setTimeout(() => {
         $(this).addClass("slide");
       }, 300);
@@ -27,7 +31,7 @@ $(window).scroll(function () {
   $(".slideanim4").each(function () {
     var pos = $(this).offset().top;
     var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
+    if (pos < winTop + h * 80/100) {
       setTimeout(() => {
         $(this).addClass("slide");
       }, 450);
@@ -36,7 +40,7 @@ $(window).scroll(function () {
   $(".slideanim5").each(function () {
     var pos = $(this).offset().top;
     var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
+    if (pos < winTop + h * 80/100) {
       setTimeout(() => {
         $(this).addClass("slide");
       }, 600);
@@ -66,9 +70,9 @@ $(document).ready(function () {
 
   // Get the image and insert it inside the modal
   var modalImg = $("#modal-img");
-  $(".srcImg").on("click", function() {
+  $(".srcImg").on("click", function () {
     url = $(this).attr("src");
-    modal.style.display = "block";
+    modal.style.display = "flex";
     $(modalImg).attr("src", url);
   })
 
