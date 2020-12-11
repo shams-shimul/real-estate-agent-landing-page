@@ -1162,6 +1162,10 @@ section.testimonial {
   color: #000000;
   transition: all 0.2s;
 }
+.contact-form input:focus,
+.contact-form textarea:focus {
+  color: #023061;
+}
 .contact-form input:focus::placeholder,
 .contact-form textarea:focus::placeholder {
   color: silver;
