@@ -1105,6 +1105,7 @@ section.testimonial {
 }
 
 .contact-form .field-group {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -1124,10 +1125,18 @@ section.testimonial {
   padding: 0px 30px;
   color: black;
   border: 1px solid black;
+  transition: all 0.1s;
 }
 
 .contact-form input:first-child {
   margin-right: 32px;
+}
+.contact-form input:focus {
+  border-radius: 6px;
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #023061;
+  padding: 0px 29px;
 }
 
 .contact-form textarea {
@@ -1140,10 +1149,22 @@ section.testimonial {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 21px;
 }
+.contact-form textarea:focus {
+  border-radius: 6px;
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #023061;
+  padding: 11px 29px;
+}
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #000000;
+  transition: all 0.2s;
+}
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: silver;
 }
 
 .contact-form .btn-submit {
@@ -1156,6 +1177,12 @@ section.testimonial {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
+.contact-form .btn-submit:hover {
+  background-color: #022346;
+  border-radius: 6px;
 }
 
 /* Contact Form Responsive */
