@@ -1,54 +1,56 @@
-$(window).scroll(function () {
-  var h = window.innerHeight
-    || document.documentElement.clientHeight
-    || document.body.clientHeight;
-
-  $(".slideanim1").each(function () {
-    var pos = $(this).offset().top;
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + h * 80/100) {
-      $(this).addClass("slide");
-    }
-  });
-  $(".slideanim2").each(function () {
-    var pos = $(this).offset().top;
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + h * 80/100) {
-      setTimeout(() => {
-        $(this).addClass("slide");
-      }, 150);
-    }
-  });
-  $(".slideanim3").each(function () {
-    var pos = $(this).offset().top;
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + h * 80/100) {
-      setTimeout(() => {
-        $(this).addClass("slide");
-      }, 300);
-    }
-  });
-  $(".slideanim4").each(function () {
-    var pos = $(this).offset().top;
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + h * 80/100) {
-      setTimeout(() => {
-        $(this).addClass("slide");
-      }, 450);
-    }
-  });
-  $(".slideanim5").each(function () {
-    var pos = $(this).offset().top;
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + h * 80/100) {
-      setTimeout(() => {
-        $(this).addClass("slide");
-      }, 600);
-    }
-  });
-});
-
 $(document).ready(function () {
+  // Scrooling Animation
+  $(window).scroll(function () {
+    var h = window.innerHeight
+      || document.documentElement.clientHeight
+      || document.body.clientHeight;
+
+    $(".slideanim1").each(function () {
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + h * 80 / 100) {
+        $(this).addClass("slide");
+      }
+    });
+    $(".slideanim2").each(function () {
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + h * 80 / 100) {
+        setTimeout(() => {
+          $(this).addClass("slide");
+        }, 150);
+      }
+    });
+    $(".slideanim3").each(function () {
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + h * 80 / 100) {
+        setTimeout(() => {
+          $(this).addClass("slide");
+        }, 300);
+      }
+    });
+    $(".slideanim4").each(function () {
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + h * 80 / 100) {
+        setTimeout(() => {
+          $(this).addClass("slide");
+        }, 450);
+      }
+    });
+    $(".slideanim5").each(function () {
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + h * 80 / 100) {
+        setTimeout(() => {
+          $(this).addClass("slide");
+        }, 600);
+      }
+    });
+  });
+
+  // Slick Configuration
   $('.testimonial-slider').slick({
     infinite: true,
     arrows: true,
