@@ -2,4 +2,4 @@
 This is a static HTML page designed for real-estate agency portfolio.
 
 ## Live
-View the page live in action here: [http://demo1.procoder.xyz/](https://shams-shimul.github.io/real-estate-agent-landing-page/)
+View the page [live in action here](https://shams-shimul.github.io/real-estate-agent-landing-page/).
