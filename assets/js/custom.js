@@ -86,3 +86,22 @@ $(document).ready(function () {
     modal.style.display = "none";
   }
 });
+
+// Change favicon according to dark/light theme
+
+let lightSchemeIcon = document.querySelector('link#light-theme-favicon');
+let darkSchemeIcon = document.querySelector('link#dark-theme-favicon');
+
+matcher = window.matchMedia('(prefers-color-scheme: dark)');
+matcher.addEventListener('change', onUpdate);
+onUpdate();
+
+function onUpdate() {
+  if (matcher.matches) {
+    lightSchemeIcon.remove();
+    document.head.append(darkSchemeIcon);
+  } else {
+    darkSchemeIcon.remove();
+    document.head.append(lightSchemeIcon);
+  }
+}
